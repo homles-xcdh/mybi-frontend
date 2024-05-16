@@ -4,7 +4,7 @@ import '@umijs/max';
 import React from 'react';
 
 const Footer: React.FC = () => {
-  const defaultMessage = 'Aliterc出品';
+  const defaultMessage = '';
   const currentYear = new Date().getFullYear();
   return (
     <DefaultFooter
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       links={[
         {
           key: '1',
-          title: '智能 BI',
+          title: '智能数据分析平台',
           href: 'https://pro.ant.design',
           blankTarget: true,
         },
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         },
         {
           key: '3',
-          title: '智能 BI',
+          title: '智能数据分析平台',
           href: 'https://ant.design',
           blankTarget: true,
         },

@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import { getLoginUserUsingGET } from '@/services/mybi/userController';
 import { LinkOutlined } from '@ant-design/icons';
+import { Question } from '@/components/RightContent';
 import { SettingDrawer } from '@ant-design/pro-components';
 import type { RunTimeLayoutConfig } from '@umijs/max';
 import { history, Link } from '@umijs/max';
@@ -31,7 +32,7 @@ export async function getInitialState(): Promise<InitialState> {
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
   return {
-    //actionsRender: () => [<Question key="doc" />],
+    // actionsRender: () => [<Question key="doc" />],
     avatarProps: {
       src: initialState?.loginUser?.userAvatar,
       title: <AvatarName />,

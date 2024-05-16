@@ -16,7 +16,7 @@ const Settings: ProLayoutProps & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: '智能 BI',
+  title: '智能数据分析平台',
   pwa: true,
   logo: Logo,
   iconfontUrl: '',

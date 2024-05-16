@@ -65,8 +65,8 @@ const UserRegister: React.FC = () => {
             maxWidth: '75vw',
           }}
           logo={<img alt="logo" src="/logo.svg" />}
-          title="智能 BI"
-          subTitle="智能 BI"
+          title="智能数据分析平台"
+          subTitle="智能数据分析平台"
           submitter={{
             searchConfig: {
               submitText: '注册',
