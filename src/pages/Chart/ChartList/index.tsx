@@ -103,7 +103,7 @@ const TestMyChartPage: React.FC = () => {
   //每30s加载一次数据
   useInterval(() => {
     loadData();
-  }, 30000);
+  }, 5000);
 
   /**
    * 删除图表数据
@@ -308,6 +308,16 @@ const TestMyChartPage: React.FC = () => {
         //     chartType: params.chartType,
         //   });
         // }}
+        request={async (params = {}, sort, filter) => {
+          setSearchParams({
+            ...searchParams,
+            chartName: params.chartName,
+            chartType: params.chartType,
+          });
+          return {
+              dataSource:chartList
+          }
+        }}
         rowKey="id"
         pagination={{
           onChange: (page, pageSize) => {
