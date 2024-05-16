@@ -301,13 +301,13 @@ const TestMyChartPage: React.FC = () => {
           labelWidth: 'auto',
           defaultCollapsed: false,
         }}
-        {... (params) => {
-          setSearchParams({
-            ...searchParams,
-            chartName: params.chartName,
-            chartType: params.chartType,
-          });
-        }}
+        // request={async (params) => {
+        //   setSearchParams({
+        //     ...searchParams,
+        //     chartName: params.chartName,
+        //     chartType: params.chartType,
+        //   });
+        // }}
         rowKey="id"
         pagination={{
           onChange: (page, pageSize) => {
