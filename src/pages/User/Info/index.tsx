@@ -113,7 +113,6 @@ const UserInfoPage: React.FC = () => {
             <Descriptions.Item label="年龄">{'暂无'}</Descriptions.Item>
             <Descriptions.Item label="手机号">{'暂无'}</Descriptions.Item>
             <Descriptions.Item label="邮箱">{'暂无'}</Descriptions.Item>
-            <Descriptions.Item label="地区">{'暂无'}</Descriptions.Item>
           </Descriptions>
           <Divider />
 
