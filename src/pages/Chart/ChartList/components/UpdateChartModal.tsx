@@ -65,6 +65,7 @@ const UpdateChartModal: React.FC<UpdateModalProps> = (props) => {
                   };
                   console.log('updateParams', params);
                   handleUpdate(params);
+                  location.replace(location.href);
                 }}
               >
                 提交

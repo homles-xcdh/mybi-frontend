@@ -399,6 +399,10 @@ declare namespace API {
     userPassword?: string;
     userProfile?: string;
     userRole?: string;
+    gender?: string;
+    age?: number;
+    phone?: number;
+    email?: string;
   };
 
   type UserAddRequest = {
@@ -414,6 +418,10 @@ declare namespace API {
     userAvatar?: string;
     userName?: string;
     userProfile?: string;
+    gender?: string;
+    age?: number;
+    phone?: number;
+    email?: string;
   };
 
   type UserLoginRequest = {
@@ -432,6 +440,10 @@ declare namespace API {
     userName?: string;
     userProfile?: string;
     userRole?: string;
+    gender?: string;
+    age?: number;
+    phone?: number;
+    email?: string;
   };
 
   type UserRegisterRequest = {
@@ -444,6 +456,10 @@ declare namespace API {
     userAvatar?: string;
     userName?: string;
     userProfile?: string;
+    gender?: string;
+    age?: number;
+    phone?: number;
+    email?: string;
   };
 
   type UserUpdateRequest = {
@@ -453,6 +469,10 @@ declare namespace API {
     userPassword?: string;
     userProfile?: string;
     userRole?: string;
+    gender?: string;
+    age?: number;
+    phone?: number;
+    email?: string;
   };
 
   type UserVO = {
@@ -462,5 +482,9 @@ declare namespace API {
     userName?: string;
     userProfile?: string;
     userRole?: string;
+    gender?: string;
+    age?: number;
+    phone?: number;
+    email?: string;
   };
 }

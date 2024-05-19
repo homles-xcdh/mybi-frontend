@@ -17,6 +17,7 @@ interface UpdateModalProps {
  */
 const handleUpdate = async (fields: API.User) => {
   const hide = message.loading('正在修改');
+  console.log(fields);
   try {
     await updateUserInfoUsingPOST({
       id: fields.id ?? 0,
@@ -39,7 +40,7 @@ const handleUpdate = async (fields: API.User) => {
  */
 const UpdateUserInfoModal: React.FC<PropsWithChildren<UpdateModalProps>> = (props) => {
   const { oldData, columns, modalVisible, onSubmit, onCancel } = props;
-
+  // console.log(columns);
   return (
     <Modal
       destroyOnClose
@@ -63,6 +64,7 @@ const UpdateUserInfoModal: React.FC<PropsWithChildren<UpdateModalProps>> = (prop
           if (success) {
             onSubmit?.();
           }
+          location.replace(location.href);
         }}
       />
     </Modal>

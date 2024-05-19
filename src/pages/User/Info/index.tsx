@@ -74,15 +74,30 @@ const UserInfoPage: React.FC = () => {
       valueType: 'text',
     },
     {
-      title: '用户头像',
-      dataIndex: 'userAvatar',
-      valueType: 'image',
-    },
-    {
       title: '创建时间',
       dataIndex: 'createTime',
       valueType: 'dateTime',
       hideInForm: true,
+    },
+    {
+      title: '性别',
+      dataIndex: 'gender',
+      valueType: 'text',
+    },
+    {
+      title: '年龄',
+      dataIndex: 'age',
+      valueType: 'text',
+    },
+    {
+      title: '手机号',
+      dataIndex: 'phone',
+      valueType: 'text',
+    },
+    {
+      title: '邮箱',
+      dataIndex: 'email',
+      valueType: 'text',
     },
   ];
 
@@ -93,44 +108,44 @@ const UserInfoPage: React.FC = () => {
           <Descriptions
             title={'基本信息'}
             column={1}
-            extra={
-              <Button
-                type={'link'}
-                icon={<EditOutlined />}
-                onClick={() => {
-                  setUpdateData(loginUser as API.User);
-                  setUpdateModalVisible(true);
-                }}
-              >
-                编辑
-              </Button>
-              // <Link to={'/user/info/edit'}>
-              // </Link>
-            }
+            // extra={
+            //   <Button
+            //     type={'link'}
+            //     icon={<EditOutlined />}
+            //     onClick={() => {
+            //       setUpdateData(loginUser as API.User);
+            //       setUpdateModalVisible(true);
+            //     }}
+            //   >
+            //     编辑
+            //   </Button>
+            //   // <Link to={'/user/info/edit'}>
+            //   // </Link>
+            // }
             labelStyle={{ color: 'black', marginRight: 20 }}
           >
-            <Descriptions.Item label="性别">{'暂无'}</Descriptions.Item>
-            <Descriptions.Item label="年龄">{'暂无'}</Descriptions.Item>
-            <Descriptions.Item label="手机号">{'暂无'}</Descriptions.Item>
-            <Descriptions.Item label="邮箱">{'暂无'}</Descriptions.Item>
+            <Descriptions.Item label="性别">{loginUser?.gender||'暂无'}</Descriptions.Item>
+            <Descriptions.Item label="年龄">{loginUser?.age||'暂无'}</Descriptions.Item>
+            <Descriptions.Item label="手机号">{loginUser?.phone||'暂无'}</Descriptions.Item>
+            <Descriptions.Item label="邮箱">{loginUser?.email||'暂无'}</Descriptions.Item>
           </Descriptions>
           <Divider />
 
           <Descriptions
             title={'其他'}
             column={1}
-            extra={
-              <Button
-                type={'link'}
-                icon={<EditOutlined />}
-                onClick={() => {
-                  setUpdateData(loginUser as API.User);
-                  setUpdateModalVisible(true);
-                }}
-              >
-                编辑
-              </Button>
-            }
+            // extra={
+            //   <Button
+            //     type={'link'}
+            //     icon={<EditOutlined />}
+            //     onClick={() => {
+            //       setUpdateData(loginUser as API.User);
+            //       setUpdateModalVisible(true);
+            //     }}
+            //   >
+            //     编辑
+            //   </Button>
+            // }
             labelStyle={{ color: 'black', marginRight: 20 }}
           >
             <Descriptions.Item label="id">{loginUser?.id}</Descriptions.Item>
