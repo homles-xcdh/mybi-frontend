@@ -74,7 +74,7 @@ export default defineConfig({
    * @name layout 插件
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: '智能数据分析平台',
+  title: '网站用户增长趋势分析系统',
   layout: {
     locale: true,
     ...defaultSettings,

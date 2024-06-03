@@ -36,15 +36,15 @@
         icon: 'barChart',
         component: 'Chart/AddChart',
       },
-      {
-        path: '/chart/add/async',
-        name: '智能分析（异步线程池）',
-        icon: 'barChart',
-        component: 'Chart/AddChartSync',
-      },
+      // {
+      //   path: '/chart/add/async',
+      //   name: '智能分析（异步线程池）',
+      //   icon: 'barChart',
+      //   component: 'Chart/AddChartSync',
+      // },
       {
         path: '/chart/add/async/mq',
-        name: '智能分析（异步mq）',
+        name: '智能分析(异步mq)',
         icon: 'barChart',
         component: 'Chart/AddChartSyncMq',
       },
@@ -74,6 +74,21 @@
       },
     ],
   },
+
+  {
+    name: '图片分析',
+    path: '/image/add',
+    component: './AddImage',
+    icon: 'barChart',
+  },
+
+  {
+    name: '文本识别',
+    path: '/text/analysis',
+    component: './TextAnalysis',
+    icon: 'barChart',
+  },
+
   {
     path: '*',
     layout: false,

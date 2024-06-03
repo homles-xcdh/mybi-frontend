@@ -487,4 +487,13 @@ declare namespace API {
     phone?: number;
     email?: string;
   };
+
+
+
+  type uploadImageAnalysisUsingPOSTParams = {
+    biz?: string;
+    goal?: string;
+  };
+
+  
 }

@@ -65,8 +65,8 @@ const UserRegister: React.FC = () => {
             maxWidth: '75vw',
           }}
           logo={<img alt="logo" src="/logo.svg" />}
-          title="智能数据分析平台"
-          subTitle="智能数据分析平台"
+          title="网站用户增长趋势分析系统"
+          subTitle="网站用户增长趋势分析系统"
           submitter={{
             searchConfig: {
               submitText: '注册',
